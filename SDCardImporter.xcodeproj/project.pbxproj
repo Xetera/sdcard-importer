@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0000201000000000000001 /* BadgeExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A0000101000000000000002 /* BadgeExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A0000201000000000000002 /* Ledger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000101000000000000007 /* Ledger.swift */; };
+		A0000201000000000000003 /* BackupIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000101000000000000008 /* BackupIndex.swift */; };
+		A0000201000000000000004 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000101000000000000009 /* Settings.swift */; };
+		A0000201000000000000005 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = A0000E01000000000000001 /* Sparkle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0000301000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0000001000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0000401000000000000002;
+			remoteInfo = BadgeExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A0000501000000000000001 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A0000201000000000000001 /* BadgeExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A0000101000000000000001 /* SD Card Importer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SD Card Importer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0000101000000000000002 /* BadgeExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BadgeExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0000101000000000000003 /* App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "App-Info.plist"; sourceTree = "<group>"; };
+		A0000101000000000000004 /* BadgeExtension-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BadgeExtension-Info.plist"; sourceTree = "<group>"; };
+		A0000101000000000000005 /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
+		A0000101000000000000006 /* BadgeExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BadgeExtension.entitlements; sourceTree = "<group>"; };
+		A0000101000000000000007 /* Ledger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Ledger.swift; path = Sources/Shared/Ledger.swift; sourceTree = SOURCE_ROOT; };
+		A0000101000000000000008 /* BackupIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BackupIndex.swift; path = Sources/Shared/BackupIndex.swift; sourceTree = SOURCE_ROOT; };
+		A0000101000000000000009 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = Sources/Shared/Settings.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A0000601000000000000001 /* App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = App;
+			sourceTree = "<group>";
+		};
+		A0000601000000000000002 /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A0000601000000000000003 /* BadgeExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = BadgeExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0000701000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0000201000000000000005 /* Sparkle in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0000701000000000000002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0000801000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A0000801000000000000002 /* Sources */,
+				A0000801000000000000003 /* Resources */,
+				A0000801000000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0000801000000000000002 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A0000601000000000000001 /* App */,
+				A0000601000000000000002 /* Shared */,
+				A0000601000000000000003 /* BadgeExtension */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A0000801000000000000003 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A0000101000000000000007 /* Ledger.swift */,
+				A0000101000000000000008 /* BackupIndex.swift */,
+				A0000101000000000000009 /* Settings.swift */,
+				A0000101000000000000003 /* App-Info.plist */,
+				A0000101000000000000004 /* BadgeExtension-Info.plist */,
+				A0000101000000000000005 /* App.entitlements */,
+				A0000101000000000000006 /* BadgeExtension.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A0000801000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0000101000000000000001 /* SD Card Importer.app */,
+				A0000101000000000000002 /* BadgeExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0000401000000000000001 /* SDCardImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0000901000000000000001 /* Build configuration list for PBXNativeTarget "SDCardImporter" */;
+			buildPhases = (
+				A0000A01000000000000001 /* Sources */,
+				A0000701000000000000001 /* Frameworks */,
+				A0000501000000000000001 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0000B01000000000000001 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A0000601000000000000001 /* App */,
+				A0000601000000000000002 /* Shared */,
+			);
+			name = SDCardImporter;
+			packageProductDependencies = (
+				A0000E01000000000000001 /* Sparkle */,
+			);
+			productName = SDCardImporter;
+			productReference = A0000101000000000000001 /* SD Card Importer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0000401000000000000002 /* BadgeExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0000901000000000000002 /* Build configuration list for PBXNativeTarget "BadgeExtension" */;
+			buildPhases = (
+				A0000A01000000000000002 /* Sources */,
+				A0000701000000000000002 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A0000601000000000000003 /* BadgeExtension */,
+			);
+			name = BadgeExtension;
+			packageProductDependencies = (
+			);
+			productName = BadgeExtension;
+			productReference = A0000101000000000000002 /* BadgeExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0000001000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					A0000401000000000000001 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					A0000401000000000000002 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+				};
+			};
+			buildConfigurationList = A0000901000000000000003 /* Build configuration list for PBXProject "SDCardImporter" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0000801000000000000001;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A0000D01000000000000001 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A0000801000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0000401000000000000001 /* SDCardImporter */,
+				A0000401000000000000002 /* BadgeExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0000A01000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0000A01000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0000201000000000000002 /* Ledger.swift in Sources */,
+				A0000201000000000000003 /* BackupIndex.swift in Sources */,
+				A0000201000000000000004 /* Settings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0000B01000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0000401000000000000002 /* BadgeExtension */;
+			targetProxy = A0000301000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A0000D01000000000000001 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A0000E01000000000000001 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0000D01000000000000001 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A0000C01000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A0000C01000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		A0000C01000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Resources/App.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FLDWQ2AC5Y;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Resources/App-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xetera.sdcardimporter;
+				PRODUCT_NAME = "SD Card Importer";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		A0000C01000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Resources/App.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FLDWQ2AC5Y;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Resources/App-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xetera.sdcardimporter;
+				PRODUCT_NAME = "SD Card Importer";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		A0000C01000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Resources/BadgeExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FLDWQ2AC5Y;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Resources/BadgeExtension-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xetera.sdcardimporter.badges;
+				PRODUCT_NAME = BadgeExtension;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		A0000C01000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Resources/BadgeExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FLDWQ2AC5Y;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Resources/BadgeExtension-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xetera.sdcardimporter.badges;
+				PRODUCT_NAME = BadgeExtension;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0000901000000000000003 /* Build configuration list for PBXProject "SDCardImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000C01000000000000001 /* Debug */,
+				A0000C01000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0000901000000000000001 /* Build configuration list for PBXNativeTarget "SDCardImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000C01000000000000003 /* Debug */,
+				A0000C01000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0000901000000000000002 /* Build configuration list for PBXNativeTarget "BadgeExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000C01000000000000005 /* Debug */,
+				A0000C01000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0000001000000000000001 /* Project object */;
+}
