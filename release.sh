@@ -112,7 +112,17 @@ codesign -dvv "$APP" 2>&1 | grep -E "Authority|TeamIdentifier" | sed 's/^/  /'
 echo "==> building dmg"
 cp -R "$APP" "$DMG_DIR/"
 ln -s /Applications "$DMG_DIR/Applications"
-hdiutil create -volname "$APP_NAME" -srcfolder "$DMG_DIR" -ov -format UDZO "$DMG" >/dev/null
+for attempt in 1 2 3; do
+    if hdiutil create -volname "$APP_NAME" -srcfolder "$DMG_DIR" -ov -format UDZO "$DMG" >/dev/null 2>&1; then
+        break
+    fi
+    if [[ $attempt -eq 3 ]]; then
+        echo "hdiutil create failed after 3 attempts" >&2
+        exit 1
+    fi
+    echo "  hdiutil busy, retrying ($attempt/3)"
+    sleep 3
+done
 codesign --force --sign "Developer ID Application" --timestamp "$DMG"
 
 echo "==> notarizing (this can take a few minutes)"
